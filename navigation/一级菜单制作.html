@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>
+		商品导航
+	</title>
+	<style type="text/css">
+body{
+	padding: 0;
+	font-size: 10pt;
+}
+.topmenu{
+	display: block;
+	width: 220px;
+	border: 2px solid #e4393c;
+	margin: 0;
+	padding: 0;
+}
+.toptitle{
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #ccc;
+	background: #e4393c;
+	padding-left: 20px;
+}
+.topmenu li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 11pt;
+	list-style-type: none;
+	text-align: left;
+	padding-left: 8px;
+	z-index: 3;
+	background-image: url(1.jpg);
+	background-size: 10px;
+	background-repeat:no-repeat;
+	background-position: right; 
+}
+.topmenu li:hover{
+	border: 1px solid #ddd;
+	border-right: none;
+	box-shadow: 0 0 8px #ddd;
+	-webkit-box-shadow:0 0 8px #ddd;
+	-moz-box-shadow:0 0 8px #ddd;
+	background-image:none;
+}
+.topmenu a{
+	text-decoration: none;
+	color: #313131;
+}
+.topmenu a:hover{
+	text-decoration: underline;
+	font-weight: bold;
+	color:#e4393c;
+}
+.submenu{
+	z-index: 4;
+	display: none;
+	width: 715px;
+	left: 220px;
+	position: absolute;
+	top: 40px;
+	border: 1px solid #ddd;
+    background:#ccc;
+    box-shadow: 0 0 4px #ddd;
+	-webkit-box-shadow:0 0 4px #ddd;
+	-moz-box-shadow:0 0 4px #ddd;
+}
+.leftdiv{
+	background:white;
+	float: left;
+	width: 490px;
+	margin: 5px;
+}
+.rightdiv{
+	background:blue;
+	float: left;
+	width: 200px;
+	margin: 5px;
+}
+.topmenu li:hover .submenu{
+	display: block;
+}
+.topmenu li:hover span{
+	background:white;
+	display: inline-block;
+	z-index: 20;
+	width: 20px;
+	height: 30px;
+	float: right;
+	position: relative;
+}
+.leftdiv dl{
+	display: block;
+	border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
+    overflow: hidden;
+}
+.leftdiv dl dt{
+	display: block;
+	float: left;
+	width: 60px;
+	text-align: right;
+	height: 22px;
+	line-height: 22px;
+	padding-right: 6px;
+}
+.leftdiv dl dt dd{
+	display: block;
+	overflow: hidden;
+}
+.leftdiv dl dt a{
+	color:#e4393c;
+	font-weight: bold;
+	text-decoration: underline;
+	font-weight: 10pt;
+}
+.leftdiv dl dd a {
+	display: block;
+	float: left;
+	border-left: 1px solid #ccc;
+	color: #737;
+	font-size: 9pt;
+	padding: 0 8px;
+	height: 14px;
+	line-height: 14px;
+	margin: 4px 0;
+}
+
+	</style>
+</head>
+<body>
+<ul class="topmenu">
+<div class="toptitle">
+	全部商品分类
+</div>
+	<li><a href="#">图书、音像、数字产品</a><span></span>
+	<div class="submenu">
+	<div class="leftdiv">
+	  <dl>
+	  	<dt><a href="#">电子书</a></dt>
+	  	<dd>
+	  		<a href="#">免费</a><a href="#">小说</a><a href="#">心灵鸡汤</a><a href="#">文学</a><a href="#">经管</a><a href="#">畅读</a>
+	  	</dd>
+	  </dl>
+	</div>
+	<div class="rightdiv">
+	广告商品<br/>
+	广告商品<br/>	
+	</div>
+	</div>
+	</li>
+	<li><a href="#">家用电器</a></li>
+	<li><a href="#">手机、数码</a></li>
+	<li><a href="#">电脑、办公</a></li>
+	<li><a href="#">家居、家具、家装、厨具</a></li>
+	<li><a href="#">服饰内衣、珠宝首饰</a></li>
+	<li><a href="#">个护化妆</a></li>
+	<li><a href="#">鞋子</a></li>
+	<li><a href="#">汽车</a></li>
+	<li><a href="#">母婴、玩具、乐器</a></li>
+	<li><a href="#">食品饮料、生鲜、酒类</a></li>
+	<li><a href="#">营养保健</a></li>
+	<li><a href="#">彩票</a></li>
+</ul>
+</body>
+</html>
